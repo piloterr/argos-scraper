@@ -70,7 +70,7 @@ response = requests.get(
     params={
         "query": "https://www.argos.co.uk/product/9637285",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -187,7 +187,7 @@ response = requests.get(
     params={
         "query": "laptop",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
